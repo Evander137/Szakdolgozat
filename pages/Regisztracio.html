@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/Regisztracio.css">
+    <title>Regisztráció</title>
+</head>
+<body>
+<form method="POST" action="../php/regisztracio.php">
+  <h2>Regisztráció</h2>
+		<p>
+			<label for="Email" class="floatLabel">E-mail</label>
+			<input id="Email" name="Email" type="text">
+			<span id="span_email">Az email cím nem megfelelő</span>
+		</p>
+		<p>
+			<label for="jelszo" class="floatLabel">Jelszó</label>
+			<input id="jelszo" name="jelszo" type="password">
+			<span id="span1">A jelszavak nem egyeznek</span>
+		</p>
+		<p>
+			<label for="jelszo2" class="floatLabel">Jelszó megerősítése</label>
+			<input id="jelszo2" name="jelszo2" type="password">
+			<span id="span2">A jelszavak nem egyeznek</span>
+		</p>
+		<p>
+			<span id="hibauzenet">Hibás adatbevitel</span>
+		</p>
+		<p>
+			<input type="submit" value="Regisztráció" id="submit">
+		</p>
+	</form>
+	<script src="../js/Regisztracio.js"></script>
+</body>
+</html>
